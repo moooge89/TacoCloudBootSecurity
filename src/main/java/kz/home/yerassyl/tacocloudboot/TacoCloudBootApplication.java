@@ -21,16 +21,16 @@ public class TacoCloudBootApplication implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("home");
     }
 
-    @Bean
-    public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/taco");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("2002");
-
-        return dataSource;
-    }
+//    @Bean
+//    public DataSource dataSource() {
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//
+//        dataSource.setDriverClassName("org.postgresql.Driver");
+//        dataSource.setUrl("jdbc:postgresql://localhost:5432/taco");
+//        dataSource.setUsername("postgres");
+//        dataSource.setPassword("2002");
+//
+//        return dataSource;
+//    }
 
 }
