@@ -1,0 +1,18 @@
+.grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+
+#submit_button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#name, #city, #state, #zip, #ccCVV, #ccNumber, #ccExpiration{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.validationError{
+    color:red;
+}
