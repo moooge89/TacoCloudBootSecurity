@@ -8,10 +8,15 @@
 </head>
 
 <body>
+  <h1>Hello, <span th:text="${user.getFullname()}">NAME</span>!</h1>
   <h1>Design your taco!</h1>
   <img th:src="@{/images/TacoCloud.jpg}"/>
 
-  <form method="post" th:object="${taco}">
+  <form method="POST" th:action="@{/logout}">
+    <input type="submit" value="Logout"/>
+  </form>
+
+  <form method="post" th:action="@{/design}" th:object="${taco}">
 
     <span class="validationError"
           th:if="${#fields.hasErrors('ingredients')}"
